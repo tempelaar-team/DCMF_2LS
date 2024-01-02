@@ -10,7 +10,7 @@ Publication: https://pubs.acs.org/doi/full/10.1021/acs.jpclett.2c03724
 ## Usage of the code
 The code has been run under Python 3.8.
 
-Required packages: Numpy, Numba, Ray, time
+Required packages: Numpy, Numba, Ray, time, matplotlib
 
 To run a simulation with MF or DC-MF:
 ```
