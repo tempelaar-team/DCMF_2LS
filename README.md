@@ -16,15 +16,15 @@ To run a simulation with MF or DC-MF:
 ```
 python3 main.py input.txt
 ```
-In line 29 of main.py, one can run the MF dynamics by calling `runCalc` in `mixQC_2atoms` and DC-MF dynamics by calling `runCalc` in `mixQC_2atoms_MFDC`.
+In line 29 of main.py, one can run the MF dynamics by calling `runCalc` in `mixQC_MF` and DC-MF dynamics by calling `runCalc` in `mixQC_DCMF`.
 
 To get the results and plots for MF dynamics:
 ```
-python3 analyze_Hoff.py
+python3 analyze_MF.py
 ```
 To get the results and plots for DC-MF dynamics:
 ```
-python3 analyze_MFDC.py
+python3 analyze_DCMF.py
 ```
 
 Alternatively, to run a simulation with CISD (note that this also reads input.txt):
@@ -39,10 +39,10 @@ python3 calc_ele_int_elewise.py
 ## Explanation to each file
 + input.txt: input file where one sets all parameters
 + main.py: the main executive file
-+ mixQC_2atoms.py: functions for MF dynamics
-+ mixQC_2atoms_MFDC.py: functions for DC-MF dynamics
-+ analyze_MFDC.py: analyze the DC-MF results and get figures
-+ analyze_Hoff.py: analyze the MF results and get figures
-+ exact_CISD_Natom_RK4.py: executive file for the CISD result
-+ calc_ele_int_elewise.py: calculating the electric field intensity from CISD.
++ mixQC_MF.py: functions for MF dynamics
++ mixQC_DCMF.py: functions for DC-MF dynamics
++ analyze_DCMF.py: analyze the DC-MF results and get figures
++ analyze_MF.py: analyze the MF results and get figures
++ exact/exact_CISD_Natom_RK4.py: executive file for the CISD result
++ exact/calc_ele_int_elewise.py: calculating the electric field intensity and photon number from CISD.
 
